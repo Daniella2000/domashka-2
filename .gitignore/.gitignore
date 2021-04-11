@@ -1,0 +1,54 @@
+n = int(input())
+m = int(input())
+x = int(input())
+y = int(input())
+
+a = n - y
+b = m - x
+
+if x<b
+   x<a
+   x<y:
+  print (x)
+  print ("минимальное расстояние")
+else: 
+   if y<a
+      y<b
+      y<x:
+  print (y) 
+  print ("минимальное расстояние") 
+  
+  if a<b
+      a<x                                                                      задача 0
+      a<y:
+    print (a)
+    print ("минимальное расстояние")
+    
+    else: 
+   if b<a
+      b<x
+      b<y:
+    print(b)
+    print ("минимальное расстояние")
+    
+    
+    
+print(sum(map(int, list(input()))))      задача 1
+    
+    
+
+n = int(input())                                     задача 2
+for i in range(1, n+1):
+for j in range(1, i+1):
+print(j, sep='', end='')
+print()
+
+
+
+n = int(input())
+for i in range(n - 1):                              задача 3
+    sum -= int(input())
+print(sum)
+
+    
+    
