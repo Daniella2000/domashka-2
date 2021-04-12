@@ -33,7 +33,9 @@ else:
     
     
     
-print(sum(map(int, list(input()))))      задача 1
+n = int(input('Введите число:')) 
+m = n + n                                          задача 1
+print(m)
     
     
 
@@ -52,3 +54,47 @@ print(sum)
 
     
     
+a = int(input())
+b = int(input())                                      задача 4
+n = int(input())
+cost = n * (100 * a + b)
+print(cost // 100, cost % 100)
+
+
+
+n = input("Введите трехзначное число: ")              задача 5
+n = int(n)
+ 
+d1 = n % 10
+n = n // 10
+d2 = n % 10
+n = n // 10
+ 
+print("Сумма цифр числа:", n + d1 + d2)
+
+
+
+def fibonacci(n):                                       задача 6
+    if n in (1, 2):
+        return 1
+    return fibonacci(n - 1) + fibonacci(n - 2)
+ 
+print(fibonacci())
+
+
+
+s = input()                                               задача 7
+a = s[:s.find('h') + 1] 
+b = s[s.find('h') + 1:s.rfind('h')]
+c = s[s.rfind('h'):]
+s = a + b.replace('h', 'H') + c
+print(s)
+
+
+
+s = input()                                               задача 8
+t = ''
+for i in range(len(s)):
+    if i % 3 != 0:
+        t = t + s[i]
+print(t)
